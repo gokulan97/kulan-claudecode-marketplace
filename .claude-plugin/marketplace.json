@@ -11,7 +11,7 @@
       "name": "autolog",
       "description": "Automatically logs conversations before context compaction to preserve session history",
       "version": "1.0.0",
-      "source": ".",
+      "source": "./",
       "category": "productivity"
     }
   ]
