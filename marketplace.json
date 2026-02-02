@@ -2,9 +2,9 @@
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "kulan-claudecode-marketplace",
   "version": "1.0.0",
-  "description": "Custom Claude Code plugins by ravig",
+  "description": "Custom Claude Code plugins by Gokulan",
   "owner": {
-    "name": "ravig"
+    "name": "Gokulan"
   },
   "plugins": [
     {

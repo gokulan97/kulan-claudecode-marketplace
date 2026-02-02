@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Automatically logs conversations before context compaction to preserve session history",
   "author": {
-    "name": "ravig"
+    "name": "Gokulan"
   },
   "repository": "https://github.com/gokulan97/kulan-claudecode-marketplace",
   "license": "MIT",
