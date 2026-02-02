@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "kulan-claudecode-marketplace",
+  "version": "1.0.0",
+  "description": "Custom Claude Code plugins by ravig",
+  "owner": {
+    "name": "ravig"
+  },
+  "plugins": [
+    {
+      "name": "autolog",
+      "description": "Automatically logs conversations before context compaction to preserve session history",
+      "version": "1.0.0",
+      "source": ".",
+      "category": "productivity"
+    }
+  ]
+}
