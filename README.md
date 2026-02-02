@@ -31,7 +31,7 @@ Or install via the plugin command:
 ### Enable autolog for current session
 
 ```
-/autolog on
+/autolog:on
 ```
 
 This saves logs to `./autolog/<session-id>.md` in your current directory.
@@ -39,24 +39,24 @@ This saves logs to `./autolog/<session-id>.md` in your current directory.
 ### Enable with custom directory
 
 ```
-/autolog on ~/my-logs
+/autolog:on ~/my-logs
 ```
 
 ### Check status
 
 ```
-/autolog status
+/autolog:status
 ```
 
 ### Disable
 
 ```
-/autolog off
+/autolog:off
 ```
 
 ## How it works
 
-1. When you run `/autolog on`, the plugin creates a state file at `~/.claude/autolog/<session-id>.enabled`
+1. When you run `/autolog:on`, the plugin creates a state file at `~/.claude/autolog/<session-id>.enabled`
 2. The `PreCompact` hook checks for this state file before each compaction
 3. If enabled, it runs `export_conversation.py` to append new messages to your log file
 4. A tracking file (`.session-id.lastline`) prevents duplicate exports
@@ -95,7 +95,9 @@ Can you also add tests?
 
 ## Files
 
-- `commands/autolog.md` - The `/autolog` slash command
+- `commands/on.md` - The `/autolog:on` command to enable logging
+- `commands/off.md` - The `/autolog:off` command to disable logging
+- `commands/status.md` - The `/autolog:status` command to check status
 - `hooks/hooks.json` - Registers the `PreCompact` hook
 - `scripts/save-on-compact.sh` - Shell script that runs before compaction
 - `scripts/export_conversation.py` - Python script that parses and exports conversations
@@ -108,5 +110,5 @@ Can you also add tests?
 ## Notes
 
 - Logs are session-specific; each session gets its own file
-- The plugin only logs when explicitly enabled via `/autolog on`
+- The plugin only logs when explicitly enabled via `/autolog:on`
 - Tool calls and results are included but truncated to 500 characters for readability
