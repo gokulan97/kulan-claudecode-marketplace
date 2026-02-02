@@ -5,6 +5,7 @@
   "author": {
     "name": "ravig"
   },
+  "repository": "https://github.com/gokulan97/kulan-claudecode-marketplace",
   "license": "MIT",
   "keywords": ["logging", "context", "history", "export", "compaction", "backup"]
 }
