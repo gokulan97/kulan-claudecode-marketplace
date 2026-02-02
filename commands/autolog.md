@@ -1,4 +1,5 @@
 ---
+name: ""
 allowed-tools: Bash(mkdir:*), Bash(echo:*), Bash(cat:*), Bash(rm:*), Bash(test:*), Bash(python3:*)
 description: Toggle automatic conversation logging before context compaction
 argument-hint: "[on|off|status] [log-directory]"
