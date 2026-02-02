@@ -1,0 +1,17 @@
+{
+  "description": "Autolog hook that saves conversation history before context compaction",
+  "hooks": {
+    "PreCompact": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/scripts/save-on-compact.sh",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

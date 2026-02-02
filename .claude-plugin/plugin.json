@@ -1,0 +1,10 @@
+{
+  "name": "autolog",
+  "version": "1.0.0",
+  "description": "Automatically logs conversations before context compaction to preserve session history",
+  "author": {
+    "name": "ravig"
+  },
+  "license": "MIT",
+  "keywords": ["logging", "context", "history", "export", "compaction", "backup"]
+}
